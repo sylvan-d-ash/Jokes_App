@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="Jokes" lang="en">
+<head>
+    <title>Jokes</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <script type="application/javascript" src="scripts/lib/jquery.min.js"></script>
+    <script src="scripts/lib/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="scripts/lib/angular-ui-router.js"></script>
+</head>
+<body>
+    <header ng-controller="MenuCtrl">
+        <div class="navbar-toggler">
+            <img src="assets/images/sidebar.jpg" ng-click="toggleMenu()" alt=""/>
+        </div>
+        <div id="menu" class="menu nav-collapse" ng-show="show_menu">
+            <ul class="sidebar-menu">
+                <li><a ng-click="navigate('home')">Home</a></li>
+                <li><a ng-click="navigate('about')">About</a></li>
+            </ul>
+        </div>
+        <h2 class="title">Jokes</h2>
+    </header>
+    <div class="view" ui-view>
+    
+    </div>
+</body>
+</html>

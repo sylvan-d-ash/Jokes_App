@@ -1,0 +1,13 @@
+{
+  "name": "Jokes",
+  "description": "A sample app for jokes",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/img/icon-128.png"
+  },
+  "developer": {
+    "name": "Sylvan D Ash",
+    "url": ""
+  },
+  "default_locale": "en"
+}
